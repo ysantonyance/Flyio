@@ -1,0 +1,14 @@
+app = "my-flyio-server"
+
+[build]
+
+[[services]]
+  internal_port = 9000
+  protocol = "udp"
+  
+  [[services.ports]]
+    port = 9000
+    handlers = []
+
+[[vm]]
+  size = "shared-cpu-1x"
